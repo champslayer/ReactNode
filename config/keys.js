@@ -3,10 +3,10 @@
 
 if(process.env.NODE_ENV === 'production'){
      //in production return prod set of keys
-     module.export = require.prod('./prod');
+     module.exports = require('./prod');
 } 
-else {
+else{
      //in devlopment return dev set of keys
-     module.export = require.dev('./dev');
+     module.exports = require('./dev');
 }
 // node_env tell us wheather we are in production or not
